@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#F44336</color>
+    <color name="primary_dark">#D32F2F</color>
+    <!--<color name="primary_light">#FFCDD2</color>-->
+    <color name="accent">#FF5722</color>
+    <color name="defaultColor">#565656</color>
+    <!--<color name="primary_text">#212121</color>-->
+    <!--<color name="secondary_text">#727272</color>-->
+    <!--<color name="icons">@color/white</color>-->
+    <color name="white">#FFFFFF</color>
+    <color name="bg_seekBar">#0c68b4</color>
+    <color name="Yellow">#fec33c</color>
+    <color name="black">#000</color>
+    <color name="black_transparent">#33000000</color>
+    <color name="green">#49d02d</color>
+    <color name="colorLater">#b6b6b6</color>
+    <color name="light_gray">#d8d8d8</color>
+    <color name="tv_color_main">#3680b7</color>
+    <!--<color name="divider">#B6B6B6</color>-->
+    <color name="colorBGCustomview">#BBFFFFFF</color>
+    <color name="colorTextTemplate">#555555</color>
+    <color name="colorPrimary">#FFFCED</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="gray">#f4f4f4</color>
+
+    <color name="colorTitle">#4a4a4a</color>
+    <color name="colorButtonNext">#3c88c0</color>
+    <color name="colorItemTemplate">#CC000000</color>
+    <color name="colorTextHead">#175B8C</color>
+    <color name="bg_group_filter">#ffc400</color>
+
+    <color name="colorBackground1">#000000</color>
+    <color name="colorBackground2">#FFFFFF</color>
+    <color name="colorBackground3">#C42F2F</color>
+    <color name="colorBackground4">#961670</color>
+    <color name="colorBackground5">#FFB682</color>
+    <color name="colorBackground6">#CC7CFF</color>
+    <color name="colorBackground7">#2A51BC</color>
+    <color name="colorBackground8">#217CAA</color>
+    <color name="colorBackground9">#2DA9BD</color>
+    <color name="colorBackground10">#58C29C</color>
+    <color name="colorBackground11">#94109B</color>
+    <color name="colorBackground12">#15B9AF</color>
+    <color name="colorBackground13">#EF5350</color>
+    <color name="colorBackground14">#EC407A</color>
+    <color name="colorBackground15">#AB47BC</color>
+    <color name="colorBackground16">#7E57C2</color>
+    <color name="colorBackground17">#5C6BC0</color>
+    <color name="colorBackground18">#42A5F5</color>
+    <color name="colorBackground19">#29B6F6</color>
+    <color name="colorBackground20">#26C6DA</color>
+    <color name="colorBackground21">#26A69A</color>
+    <color name="colorBackground22">#66BB6A</color>
+    <color name="colorBackground23">#9CCC65</color>
+    <color name="colorBackground24">#D4E157</color>
+    <color name="colorBackground25">#FFEE58</color>
+    <color name="colorBackground26">#FFCA28</color>
+    <color name="colorBackground27">#FFA726</color>
+    <color name="colorBackground28">#FF7043</color>
+    <color name="colorBackground29">#8D6E63</color>
+    <color name="colorBackground30">#BDBDBD</color>
+    <color name="colorBackground31">#78909C</color>
+
+    <color name="colorBackground32">#F44336</color>
+    <color name="colorBackground33">#E91E63</color>
+    <color name="colorBackground34">#9C27B0</color>
+    <color name="colorBackground35">#673AB7</color>
+    <color name="colorBackground36">#3F51B5</color>
+    <color name="colorBackground37">#2196F3</color>
+    <color name="colorBackground38">#03A9F4</color>
+    <color name="colorBackground39">#00BCD4</color>
+    <color name="colorBackground40">#009688</color>
+    <color name="colorBackground41">#4CAF50</color>
+    <color name="colorBackground42">#8BC34A</color>
+    <color name="colorBackground43">#CDDC39</color>
+    <color name="colorBackground44">#FFEB3B</color>
+    <color name="colorBackground45">#FFC107</color>
+    <color name="colorBackground46">#FF9800</color>
+    <color name="colorBackground47">#FF5722</color>
+    <color name="colorBackground48">#795548</color>
+    <color name="colorBackground49">#9E9E9E</color>
+    <color name="colorBackground50">#607D8B</color>
+
+
+    <color name="colorBackground51">#983275</color>
+    <color name="colorBackground52">#811d5e</color>
+    <color name="colorBackground53">#fd2f24</color>
+    <color name="colorBackground54">#ff6f01</color>
+    <color name="colorBackground55">#fed800</color>
+    <color name="colorBackground56">#ebc4c9</color>
+    <color name="colorBackground57">#bf89a3</color>
+    <color name="colorBackground58">#9c5978</color>
+    <color name="colorBackground59">#ffa197</color>
+    <color name="colorBackground60">#62728c</color>
+    <color name="colorBackground61">#16273b</color>
+    <color name="colorBackground62">#a1f064</color>
+    <color name="colorBackground63">#fa6164</color>
+    <color name="colorBackground64">#c73967</color>
+    <color name="colorBackground65">#2c4096</color>
+
+    <color name="colorBackground66">#8bbef3</color>
+    <color name="colorBackground67">#dee6e8</color>
+    <color name="colorBackground68">#d4d6d3</color>
+    <color name="colorBackground69">#e2a6ba</color>
+    <color name="colorBackground70">#f7d15e</color>
+    <color name="colorBackground71">#0bb4e0</color>
+    <color name="colorBackground72">#e5e4a3</color>
+    <color name="colorBackground73">#ebc2a0</color>
+    <color name="colorBackground74">#d093af</color>
+    <color name="colorBackground75">#98ce53</color>
+    <color name="colorBackground76">#de5953</color>
+    <color name="colorBackground77">#336430</color>
+    <color name="colorBackground78">#d2f1f9</color>
+    <color name="colorBackground79">#a9dee1</color>
+    <color name="colorBackground80">#83839c</color>
+    <color name="colorBackground81">#cfa2ca</color>
+
+    <color name="colorBackground82">#180f17</color>
+    <color name="colorBackground83">#5a557c</color>
+    <color name="colorBackground84">#680529</color>
+    <color name="colorBackground85">#740002</color>
+    <color name="colorBackground86">#bf001d</color>
+    <color name="colorBackground87">#cbb55a</color>
+    <color name="colorBackground88">#d9a234</color>
+    <color name="colorBackground89">#cf8329</color>
+    <color name="colorBackground90">#914149</color>
+    <color name="colorBackground91">#833043</color>
+    <color name="colorBackground92">#185b6a</color>
+    <color name="colorBackground93">#dbe1f0</color>
+    <color name="colorBackground94">#bfd2e9</color>
+    <color name="colorBackground95">#afc5db</color>
+    <color name="colorBackground96">#eee8ac</color>
+    <color name="colorBackground97">#e9df56</color>
+    <color name="colorBackground98">#cf8329</color>
+
+
+
+
+    <color name="colorRatingbar">#eac248</color>
+    <color name="colorButtonLater">#C7C7C7</color>
+    <color name="colorButtonRate">#43B171</color>
+    <color name="colorBGButtonAds">#49D02D</color>
+    <color name="ping">#cfff0077</color>
+    <color name="dark_blue">#b8e9ff</color>
+    <color name="title_tip">#269092</color>
+    <color name="title_step">#61b9ba</color>
+    <color name="color_line_dialog">#e4e4e4</color>
+    <color name="select_color">#c7eeff</color>
+    <color name="colorMenu">#4a4a4a</color>
+    <color name="text_shadow_color">#cc000000</color>
+    <color name="colordefault">#00000000</color>
+
+    <color name="color_ads">#000000</color>
+    <color name="color_ads_native">#ffffff</color>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_60sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="@dimen/_3sdp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/list_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/group_view"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            >
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_groupview"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="@dimen/radius_bg_filter"
+                app:riv_mutate_background="true"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout_bg"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/bg_filter"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_group_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/bg_group_filter"
+                android:gravity="center"
+                android:padding="@dimen/_1sdp"
+                android:text="Classic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

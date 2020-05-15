@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dev.signatureonphoto.features.preview.PreviewActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutHead"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp">
+
+        <TextView
+            android:id="@+id/txt_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/edit"
+            android:textColor="#4a90e2"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:id="@+id/img_vip"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/txt_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Home"
+            android:textColor="#4a90e2"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_resolution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutHead"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_title_resolution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="You save photos with resolution"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/txt_resolution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_title_resolution"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="Full HD"
+            android:textColor="#2266f7"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_resolution"
+            android:text="For better picture quality, save it in Full HD resolution!"
+            android:textColor="@color/colorRed"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.jackandphantom.circularimageview.RoundedImage
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/img_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_below="@id/layout_resolution"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/layout_option"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_below="@id/img_preview"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_preview"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_library" />
+
+            <TextView
+                android:id="@+id/txt_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:textColor="#4a4a4a" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_set_wp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_preview"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_wp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/txt_set_wp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/set_wp"
+                android:textColor="#4a4a4a" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_preview"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_share" />
+
+            <TextView
+                android:id="@+id/txt_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/share"
+                android:textColor="#4a4a4a" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/layout_option"
+        android:id="@+id/layout_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <com.google.android.gms.ads.AdView
+            android:layout_gravity="center"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            ads:adSize="MEDIUM_RECTANGLE"
+            ads:adUnitId="@string/adaptive_banner_screen_preview"></com.google.android.gms.ads.AdView>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_265sdp"
+            android:layout_centerInParent="true"
+            android:clipToPadding="false"
+            android:overScrollMode="never"></androidx.viewpager.widget.ViewPager>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+</RelativeLayout>

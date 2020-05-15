@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_fb"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="?android:selectableItemBackground"
+        app:srcCompat="@drawable/ic_fb" />
+
+    <ImageView
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:id="@+id/img_insta"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/ic_messenger" />
+
+    <ImageView
+        android:id="@+id/img_messenger"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="?android:selectableItemBackground"
+        app:srcCompat="@drawable/ic_messenger" />
+
+    <ImageView
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:id="@+id/img_twiter"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:background="?android:selectableItemBackground"
+        app:srcCompat="@drawable/ic_messenger" />
+
+    <ImageView
+        android:id="@+id/img_what_app"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:background="?android:selectableItemBackground"
+        app:srcCompat="@drawable/ic_messenger" />
+
+</LinearLayout>

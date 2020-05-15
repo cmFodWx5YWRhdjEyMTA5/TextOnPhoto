@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="google_test_device">
+        <item>75D8038E4A34DB960BB9CC34BCB6064C</item>
+        <item>EC5A85ED27FEE02E5C58E75F67652E73</item>
+    </string-array>
+</resources>

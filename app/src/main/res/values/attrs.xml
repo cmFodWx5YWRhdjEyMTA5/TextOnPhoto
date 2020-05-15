@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StickerView">
+        <attr name="showIcons" format="boolean" />
+        <attr name="showBorder" format="boolean" />
+        <attr name="bringToFrontCurrentSticker" format="boolean" />
+        <attr name="borderColor" format="color"/>
+        <attr name="borderAlpha" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShiningButton">
+        <attr name="color" format="color" />
+        <attr name="efx" format="reference" />
+        <attr name="efx_width" format="dimension" />
+    </declare-styleable>
+</resources>

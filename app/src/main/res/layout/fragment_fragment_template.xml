@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dev.signatureonphoto.features.template.fragment.FragmentTemplate">
+
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_above="@id/layout_adaptive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_nature"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/txt_nature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/nature"
+                    android:textColor="#4a90e2"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/ic_check_nature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/txt_nature"
+                    android:layout_toRightOf="@id/txt_nature"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_down" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_265sdp"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <com.google.android.gms.ads.AdView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    ads:adSize="MEDIUM_RECTANGLE"
+                    ads:adUnitId="@string/banner_large_screen_main"></com.google.android.gms.ads.AdView>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:visibility="gone"
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_265sdp"
+                    android:layout_centerInParent="true"
+                    android:clipToPadding="false"
+                    android:overScrollMode="never"></androidx.viewpager.widget.ViewPager>
+                <include
+                    android:visibility="gone"
+                    android:id="@+id/layout_default_cross"
+                    layout="@layout/layout_ads_cross"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_nature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></androidx.recyclerview.widget.RecyclerView>
+
+            <RelativeLayout
+                android:id="@+id/layout_life_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:id="@+id/txt_life_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/life_style"
+                    android:textColor="#4a90e2"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/ic_check_life_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/txt_life_style"
+                    android:layout_toRightOf="@id/txt_life_style"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_down" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_life_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:visibility="visible" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mainAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_native_ads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:layout_marginBottom="@dimen/_40sdp"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_macro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/txt_macro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/macro"
+                    android:textColor="#4a90e2"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/ic_check_macro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/txt_macro"
+                    android:layout_toRightOf="@id/txt_macro"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_down" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_macro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:visibility="visible"></androidx.recyclerview.widget.RecyclerView>
+
+            <RelativeLayout
+                android:id="@+id/layout_love"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/txt_love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/love"
+                    android:textColor="#4a90e2"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/ic_check_love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/txt_love"
+                    android:layout_toRightOf="@id/txt_love"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_down" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_love"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_light"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/txt_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/light"
+                    android:textColor="#4a90e2"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/ic_check_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/txt_light"
+                    android:layout_toRightOf="@id/txt_light"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_down" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_adaptive"
+        android:minHeight="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+</RelativeLayout>

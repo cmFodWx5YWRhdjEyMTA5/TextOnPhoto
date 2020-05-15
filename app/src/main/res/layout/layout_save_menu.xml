@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_save_menu" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="?android:selectableItemBackground"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_close_in_save_menu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_23sdp"
+            android:layout_marginRight="@dimen/_23sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rocoi_semibold"
+                android:text="S2Quotes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_24sdp" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="@font/proxima_nova_light"
+                android:text="Unlock all feature"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_head"
+        android:layout_marginLeft="@dimen/_23sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_23sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/linotte_regular"
+                android:lineSpacingExtra="@dimen/_5sdp"
+                android:text="Oops! Looks like your image is using PRO item. To continue, please kindly choose option below:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_reward_video"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_save_menu_selected"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp">
+
+                <RadioButton
+                    android:id="@+id/rad_reward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:checked="true" />
+
+                <TextView
+                    android:id="@+id/txt_reward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/rad_reward"
+                    android:fontFamily="@font/linotte_regular"
+                    android:text="In app purchase: Unlock all feature forever!"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <View
+                    android:id="@+id/btn_reward_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/layout_iab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp">
+
+                <RadioButton
+                    android:id="@+id/rad_iab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/txt_iab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/rad_iab"
+                    android:fontFamily="@font/linotte_regular"
+                    android:textSize="@dimen/_10sdp" />
+
+                <View
+                    android:id="@+id/btn_iab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/bg_gradient_preview"
+            android:fontFamily="@font/linotte_regular"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reward Video"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_billing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In app billing"
+        android:visibility="gone" />
+
+</RelativeLayout>

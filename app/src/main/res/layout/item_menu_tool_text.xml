@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    android:orientation="horizontal">
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:orientation="vertical">
+      <ImageView
+          android:id="@+id/logoMenu"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:src="@drawable/ic_policy"/>
+      <TextView
+          android:paddingTop="@dimen/_5sdp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/nameMenu"
+          android:text="Màu chữ"
+          android:gravity="center"
+          android:textColor="@color/colorMenu"/>
+  </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:paddingLeft="@dimen/_10sdp">
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/listDataChild"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

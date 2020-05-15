@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_cross"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:padding="@dimen/_6sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_260sdp"
+        android:layout_margin="@dimen/_6sdp"
+        android:background="@drawable/bg_ads_cross"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp">
+                <ImageView
+                    android:scaleType="fitCenter"
+                    android:id="@+id/img_icon_app"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/txt_name_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:maxLines="2"
+                    android:text="Watermark Signature On Photo - Picture watermark"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txtSponsored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="Sponsored"
+                    android:textColor="#969696"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <ImageView
+                    android:padding="@dimen/_3sdp"
+                    android:id="@+id/img_adchoice"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    app:srcCompat="@drawable/ic_adchoice" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_adver"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Ad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/layoutHeader"
+            android:paddingStart="@dimen/_5sdp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp">
+            <ImageView
+                android:id="@+id/screen1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_155sdp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/_5sdp"
+                />
+            <ImageView
+                android:id="@+id/screen2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_155sdp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/_5sdp"
+                />
+            <ImageView
+                android:id="@+id/screen3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_155sdp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtsociety"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="Get it on Google Play"
+                    android:textColor="#969696"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/txt_description_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:maxLines="2"
+                    android:text="Watermark text on photo. Create signature on photo"
+                    android:textColor="#969696"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:id="@+id/btn_install"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/bg_button_gradient"
+                android:text="INSTALL"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,278 @@
+<resources>
+    <string name="app_name">Text on photo</string>
+
+    <!--//ID ADS REAL-->
+<!--    <string name="banner_screen_main_new">ca-app-pub-4498063495034913/5193221353</string>-->
+<!--    <string name="banner_large_screen_preview">ca-app-pub-4498063495034913/7242341871</string>-->
+<!--    <string name="banner_large_screen_main">ca-app-pub-4498063495034913/4077122488</string>-->
+<!--    <string name="banner_small_screen_tips">ca-app-pub-4498063495034913/1293140494</string>-->
+<!--    <string name="banner_small_screen_userimage">ca-app-pub-4498063495034913/7555296513</string>-->
+<!--    <string name="banner_small_screen_list_quotes">ca-app-pub-4498063495034913/9037212220</string>-->
+<!--    <string name="banner_small_screen_menu_navigation">ca-app-pub-4498063495034913/9043477275</string>-->
+<!--    <string name="banner_screen_share">ca-app-pub-4498063495034913/3092036773</string>-->
+<!--    <string name="banner_screen_edit">ca-app-pub-4498063495034913/1614594102</string>-->
+
+<!--    <string name="native_screen_preview">ca-app-pub-4498063495034913/2489773641</string>-->
+<!--    <string name="native_screen_share">ca-app-pub-4498063495034913/3283980562</string>-->
+<!--    <string name="adaptive_banner_screen_preview">ca-app-pub-4498063495034913/6609166806</string>-->
+<!--    <string name="adaptive_banner_screen_saved">ca-app-pub-4498063495034913/1165268436</string>-->
+<!--    <string name="adaptive_banner_screen_template">ca-app-pub-4498063495034913/7249193963</string>-->
+
+<!--    <string name="full_screen_splash">ca-app-pub-4498063495034913/5354545137</string>-->
+<!--    <string name="full_screen_exit_app">ca-app-pub-4498063495034913/9544425759</string>-->
+<!--    <string name="full_screen_saved_image">ca-app-pub-4498063495034913/6535119034</string>-->
+<!--    <string name="full_screen_set_wallpaper">ca-app-pub-4498063495034913/4328903305</string>-->
+<!--    <string name="full_screen_create_new_share">ca-app-pub-4498063495034913/4351155853</string>-->
+<!--    <string name="full_screen_click_saved_preview">ca-app-pub-4498063495034913/4814602313</string>-->
+
+<!--    <string name="reward_click_button_full_hd">ca-app-pub-4498063495034913/2241997647</string>-->
+
+<!--    <string name="native_screen_main">ca-app-pub-4498063495034913/2681942775</string>-->
+
+    <!--//ID ADS TEST-->
+    <string name="banner_screen_main_new">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_large_screen_preview">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_large_screen_main">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_small_screen_tips">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_small_screen_userimage">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_small_screen_list_quotes">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_small_screen_menu_navigation">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_screen_share">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_screen_edit">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="native_screen_preview">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_screen_share">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="adaptive_banner_screen_preview">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="adaptive_banner_screen_saved">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="adaptive_banner_screen_template">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="full_screen_splash">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="full_screen_exit_app">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="full_screen_saved_image">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="full_screen_set_wallpaper">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="full_screen_create_new_share">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="full_screen_click_saved_preview">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="reward_click_button_full_hd">ca-app-pub-3940256099942544/5224354917</string>
+
+    <string name="native_screen_main">ca-app-pub-3940256099942544/2247696110</string>
+
+
+    <string name="dialog_action_ok">OK</string>
+    <string name="dialog_error_title">Sorry</string>
+
+    <string name="error_title">Oops</string>
+    <string name="error_message">There was a problem loading the pokemon, please try again!</string>
+    <string name="error_reload">Reload</string>
+    <string name="title_activity_maps_sample">Map</string>
+    <string name="error_something_bad_happened">Something bad happened. Please try again.</string>
+
+    <string name="facebook_app_id" translatable="false">144000169626093</string>
+    <string name="fb_login_protocol_scheme" translatable="false"></string>
+    <string name="action_rate_app">Rate App</string>
+    <string name="action_share_app">Share</string>
+    <string name="sms_thank_you_rate">Thank you very much</string>
+    <string name="lbl_rate">Rate</string>
+    <string name="lbl_later">Later</string>
+    <string name="title_rate_app"></string>
+
+    <string name="lbl_rate_1_start">1 star so sad :( </string>
+    <string name="lbl_rate_2_start">2 stars so sad :( </string>
+    <string name="lbl_rate_3_start">3 stars so sad :( </string>
+    <string name="lbl_rate_4_start">4 stars quite good! </string>
+    <string name="lbl_rate_5_start">5 stars thank you very much  &lt;3 </string>
+    <string name="create_photo">Create new photo with:</string>
+    <string name="template">TEMPLATE</string>
+    <string name="camera">Camera</string>
+    <string name="color">Color</string>
+    <string name="next">Next</string>
+    <string name="home">Home</string>
+    <string name="save">Saved</string>
+    <string name="background">Background</string>
+    <string name="text">Text</string>
+    <string name="sticker">Sticker</string>
+    <string name="overlay">Overlay</string>
+    <string name="ornament">Ornament</string>
+    <string name="text_style">Text Style</string>
+    <string name="align">Align</string>
+    <string name="shadow">Shadow</string>
+    <string name="neon">Neon fx</string>
+    <string name="left">Left</string>
+    <string name="center">Center</string>
+    <string name="right">Right</string>
+    <string name="reset_angle">Reset angle</string>
+    <string name="shareit">"Share to: "</string>
+    <string name="send_us">Send Us Your Ideas</string>
+    <string name="what_new">What\'s news</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="what_new_content">More Background Template</string>
+    <string name="what_new_content2">More Background Color</string>
+    <string name="what_new_content3">More Sticker</string>
+    <string name="what_new_content4">Fix bug Can\'t crop image</string>
+    <string name="what_new_content5">Fix bug Unable to select image from gallery</string>
+    <string name="what_new_content6">Fix bug Can not save image</string>
+    <string name="comming_soon">Current Version</string>
+    <string name="you_quote">S2 Quotes</string>
+    <string name="choose_color">Choose color</string>
+    <string name="double_click_to_edit">Double tab to write text</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Save</string>
+    <string name="none">None</string>
+    <string name="saved">Saved: </string>
+    <string name="library">LIBRARY</string>
+    <string name="share">Share</string>
+    <string name="are_you_sure">Leave this page?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="please_turn_on_the_internet_to_use_this_feature">Please turn on the internet to use this feature!</string>
+    <string name="receiver_sticker">Get hot sticker library</string>
+    <string name="late">Late</string>
+    <string name="content_dialog_rewarded">Watch the video to own the </string>
+    <string name="content_dialog_rewarded2">HOTTEST STICKER</string>
+
+    <string name="rate_1">Give Us 5 Star.</string>
+    <string name="rate_2">Give Us 5 Star.</string>
+    <string name="rate_3">Give Us 5 Star.</string>
+    <string name="rate_4">Give Us 5 Star.</string>
+    <string name="rate_5">Give Us 5 Star.</string>
+    <string name="dialog_message">Oops! This feature is developing.</string>
+    <string name="turnon_noti">Receive new notification from us</string>
+    <string name="setting">Setting</string>
+    <string name="label_select_picture">Select Picture</string>
+    <string name="toast_cannot_retrieve_selected_image">Can not select picture</string>
+    <string name="toast_cannot_retrieve_cropped_image">Can not crop picture</string>
+    <string name="permission" translatable="false">Permission to access the SD-CARD is required for this app to Download image.</string>
+    <string name="Permission_required" translatable="false">Permission required</string>
+    <string name="check_update">Check for updates</string>
+    <string name="download">Download</string>
+    <string name="sticker_ads_load_fail">Ads load fail !</string>
+    <string name="cheking_internet">Đang kiểm tra kết nối...</string>
+    <string name="open_internet">Vui lòng mở kết nối tới internet để mở tính năng này.</string>
+    <string name="ad">AD</string>
+    <string name="load_image">Please wait...</string>
+    <string name="create_new">Create New</string>
+    <string name="remove_ads_content">Say goodbye all off anoying ads \n Speed Up your S2Quotes</string>
+    <string name="buy_now">Buy now \njust</string>
+    <string name="bought">Purchased</string>
+    <string name="remove_ads_title">Remove Ads</string>
+    <string name="color_text">Color</string>
+    <string name="your_image">YOUR IMAGE</string>
+    <string name="your_image_finish">Your Image</string>
+
+    <string name="choose_template">Choose template</string>
+    <string name="nature">Nature</string>
+    <string name="macro">Macro</string>
+    <string name="love">Love</string>
+    <string name="light">Light</string>
+    <string name="life_style">Life Style</string>
+    <string name="couple">Couple</string>
+    <string name="edit">Edit</string>
+    <string name="preview">PREVIEW</string>
+    <string name="set_wp">Set as wallpaper</string>
+    <string name="continue_edit">Continue</string>
+    <string name="congratulation">You\'ve finished your design,\nIt\'s so great. Keep it up!</string>
+    <string name="remove_ads">Remove Ads</string>
+    <string name="create_new_image"> Create new</string>
+    <string name="saved_image">Saved Image</string>
+    <string name="setted_wall_paper">Set wall paper successfully</string>
+    <string name="save_null_image">Image can\'t save, please select another one!</string>
+    <string name="image_can_not_load">Can\'t load image, please select another one!</string>
+
+    <string name="ornament_line">Line</string>
+    <string name="ornament_typo">Typography</string>
+    <string name="ornament_border">Border</string>
+    <string name="quick_support">Quick Support</string>
+    <string name="action_policy">Privacy policy</string>
+    <string name="mail_subject">Report an error of the application(Text on photo)</string>
+    <string name="mail_content"></string>
+    <string name="twitter_not_install">Twitter is not install on this device</string>
+    <string name="whatsapp_not_install">Whatsapp is not install on this device</string>
+    <string name="random">Random</string>
+    <string name="more_quotes">More Quotes</string>
+    <string name="upgrade">UPGRADE TO</string>
+    <string name="pro_version">PRO VERSION</string>
+    <string name="purchase_info_bottom">Upgrade to S2Quotes Pro version only with</string>
+    <string name="copy">Add</string>
+    <string name="upload">Upload</string>
+    <string name="delete">Delete</string>
+    <string name="add_quote">+ Add quote</string>
+    <string name="quote_copied">Quote copied</string>
+    <string name="add_quote_title">Add quote</string>
+    <string name="add">ADD</string>
+    <string name="input_null">Please input your quote</string>
+    <string name="delete_success">Delete success</string>
+    <string name="exiting">exiting...</string>
+    <string name="exit_info_1">We</string>
+    <string name="exit_info_2">can\'t wait</string>
+    <string name="exit_info_3">to see you</string>
+    <string name="exit_info_4">again</string>
+    <string name="reclick_to_exit">Press again to exit</string>
+    <string name="content_purchase">Last chance to purchase <b>PRO VERSION </b> with discount up to 70%</string>
+    <string name="sale_up_title">SALE UP TO </string>
+    <string name="sale_up_percent">50%</string>
+    <string name="purchase_xmas_info_bottom_1">Last chance to purchase</string>
+    <string name="purchase_xmas_info_bottom_2">PRO VERSION</string>
+    <string name="purchase_xmas_info_bottom_3">with discount up to 50%</string>
+    <string name="new_title">New</string>
+
+    <string name="facebook_pref">FBAdPrefs</string>
+    <string name="device_id_hash">deviceIdHash</string>
+    <string name="custom_device_hash">custom_id</string>
+    <string name="saving">Saving &amp; Loading Ad...</string>
+    <string name="sd_size">SD (480 px)</string>
+    <string name="hq_size">HQ (720 px)</string>
+    <string name="hd_size">HD (1080 px)</string>
+    <string name="full_hd_size">Full HD (1920 px)</string>
+
+    <string name="function">Function</string>
+    <string name="enable_text_tip">Enable text frame mode</string>
+    <string name="resize">Resize text</string>
+    <string name="reset_text_tip">Reset the angle of the text</string>
+    <string name="delete_text_tip">Delete text</string>
+    <string name="guide">Guide</string>
+    <string name="step">step</string>
+    <string name="error_tip">If you find an error, please message us\n Email: apponlydeveloper@gmail.com</string>
+    <string name="auto_screen">Auto (Device Screen)</string>
+    <string name="free_trial">Free trial</string>
+    <string name="ok">Apply</string>
+    <string name="memory_warning">Device memory not enought. Please select small size !</string>
+    <string name="facebook_alert">Please install facebook app !</string>
+    <string name="iap_filter_content">Make your photo more beautiful\n with a special color filter</string>
+    <string name="or">or</string>
+    <string name="nexttoPro">Buy PRO version for <strong>LOWER PRICE</strong></string>
+    <string name="textStyle">Style</string>
+    <string name="bold">Bold</string>
+    <string name="italic">Italic</string>
+    <string name="textOpacity">Opacity</string>
+    <string name="textSize">Text size</string>
+    <string name="textSpacing">Text Spacing</string>
+    <string name="textStroke">Text Border</string>
+    <string name="border_color_text">Border Color</string>
+    <string name="remove_any_ads">Remove all of annoying ADS</string>
+    <string name="unlock_all">Unlock All Special filter color (with lower price)</string>
+    <string name="full_hd">Export Full HD Picture</string>
+    <string name="speedUp">Speed Up your S2Quotes\n more than 98%</string>
+    <string name="txtOriginal">ORIGINAL PRICE</string>
+    <string name="txtsixdolar">6$</string>
+    <string name="you_have">You have</string>
+    <string name="to_try">turns to try.</string>
+    <string name="unlockFullHd"><![CDATA[<br>Do you want to buy pro to unlock<br>this feature!]]></string>
+    <string name="openB"><![CDATA[<b>]]></string>
+    <string name="closeB"><![CDATA[</b>]]></string>
+    <string name="regular">Regular</string>
+    <string name="uploadSuccess">Your content has been uploaded \n successfully, you will see your content\n appear on the Quotes library in\n the next update!</string>
+    <string name="uploadFailed">Upload quotes failed !</string>
+    <string name="home_normal">Home</string>
+    <string name="ad_attribution">Ad</string>
+    <string name="export_file_in_full_hd">Export file in <b>full HD</b></string>
+    <string name="unlock_all_special_items_forever"><b>Unlock all</b> special items forever</string>
+    <string name="get_2_free_times_to_save_photos_in_this_resolution"><b>Get 2 free times</b> to save photos in this resolution!</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

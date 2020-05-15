@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dev.signatureonphoto.edittext.AddQuoteActivity">
+
+    <ImageView
+        android:id="@+id/img_background"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:padding="18dp"
+                android:src="@drawable/ic_black_back"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="match_parent"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:onClick="back"
+                android:textColor="@color/colorTitle"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="@string/add_quote_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <com.dd.ShadowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sl_dx="3dp"
+                app:sl_dy="3dp"
+                app:sl_shadowColor="#2c000000">
+
+                <EditText
+                    android:id="@+id/txt_quote"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:background="@drawable/custom_edit_text"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:lines="10"
+                    android:maxLines="10"
+                    android:scrollbars="vertical"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </com.dd.ShadowLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <com.dd.ShadowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sl_dx="3dp"
+                app:sl_dy="3dp"
+                app:sl_shadowColor="#2c000000">
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button"
+                    android:text="@string/add"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </com.dd.ShadowLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

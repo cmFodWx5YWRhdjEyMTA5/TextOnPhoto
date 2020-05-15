@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <ImageView
+        android:id="@+id/imgTemplate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+    <ImageView
+        android:id="@+id/imgTick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_tick"
+        android:visibility="gone" />
+    <RelativeLayout
+        android:id="@+id/btnTemplate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img_pro"
+        android:adjustViewBounds="true"
+        android:src="@drawable/buy"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

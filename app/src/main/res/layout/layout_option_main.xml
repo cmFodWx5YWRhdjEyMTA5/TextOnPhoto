@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.dd.ShadowLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:sl_dx="3dp"
+            app:sl_dy="3dp"
+
+            app:sl_shadowColor="#2c000000">
+
+            <LinearLayout
+                android:id="@+id/layout_template"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:background="@drawable/bg_option"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_template"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_text_on_photo" />
+
+                <TextView
+                    android:id="@+id/txt_back_ground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/img_template"
+                    android:singleLine="true"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Template"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp" />
+            </LinearLayout>
+        </com.dd.ShadowLayout>
+
+        <com.dd.ShadowLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:sl_dx="3dp"
+            app:sl_dy="3dp"
+            app:sl_shadowColor="#2c000000">
+
+            <LinearLayout
+                android:id="@+id/layout_camera"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:background="@drawable/bg_option"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_library"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_gallery_main" />
+
+                <TextView
+                    android:id="@+id/txt_library"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/img_library"
+                    android:singleLine="true"
+                    android:text="Gallery"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp" />
+            </LinearLayout>
+        </com.dd.ShadowLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.dd.ShadowLayout
+            android:id="@+id/shadow_your_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:sl_dx="3dp"
+            app:sl_dy="3dp"
+            app:sl_shadowColor="#2c000000">
+
+            <LinearLayout
+                android:id="@+id/layout_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:background="@drawable/bg_option"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_library" />
+
+                <TextView
+                    android:id="@+id/txt_your_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:text="My created"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp" />
+            </LinearLayout>
+        </com.dd.ShadowLayout>
+
+        <com.dd.ShadowLayout
+            android:id="@+id/shadow_watermark_signature"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:sl_dx="3dp"
+            app:sl_dy="3dp"
+            app:sl_shadowColor="#2c000000">
+
+
+            <LinearLayout
+                android:id="@+id/layout_watermark_signature"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:background="@drawable/bg_option"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_icon_signature" />
+
+                <TextView
+                    android:id="@+id/txt_signature_watermark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:fontFamily="@font/robotoregular"
+                    android:textStyle="bold"
+                    android:text="Add watermark"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_gravity="right"
+                android:background="@drawable/ic_ads_title"
+                android:gravity="center"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/black" />
+        </com.dd.ShadowLayout>
+    </LinearLayout>
+</LinearLayout>

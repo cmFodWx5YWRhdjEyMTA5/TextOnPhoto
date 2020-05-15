@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dev.signatureonphoto.features.main.customview.MyImageItem
+    android:background="#f7f7f4"
+    android:id="@+id/itemSticker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_1sdp"
+    android:padding="@dimen/_5sdp"
+    android:scaleType="fitCenter"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

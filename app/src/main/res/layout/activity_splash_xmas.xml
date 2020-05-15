@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.splash.SplashActivity">
+
+    <ImageView
+        android:id="@+id/imgSplash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_marginTop="@dimen/_100sdp"
+        android:id="@+id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:paddingLeft="@dimen/_60sdp"
+        android:paddingTop="@dimen/_30sdp"
+        android:paddingRight="@dimen/_60sdp"
+        android:paddingBottom="@dimen/_10sdp" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|bottom"
+        android:visibility="visible"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:max="100"
+            android:thumb="@null"
+            android:progressDrawable="@drawable/bg_seek_bar"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dev.signatureonphoto.features.settings.SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_vip_pro"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_save_menu" />
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="?android:selectableItemBackground"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_close_in_save_menu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_23sdp"
+            android:layout_marginRight="@dimen/_23sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rocoi_semibold"
+                android:text="S2Quotes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_24sdp" />
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@color/white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="@font/proxima_nova_light"
+                android:text="Unlock all feature"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_below="@id/layout_vip_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ln_check_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingLeft="17dp"
+                android:text="@string/check_update"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/_14sdp"
+                android:tint="@color/black"
+                android:layout_marginRight="@dimen/_3sdp"
+                app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_below="@id/ln_check_update"
+            android:id="@+id/ln_pro_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingLeft="17dp"
+                android:text="Upgrade pro version"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/_14sdp"
+                android:tint="@color/black"
+                android:layout_marginRight="@dimen/_3sdp"
+                app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_below="@id/ln_pro_version"
+            android:id="@+id/ln_report_bug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingLeft="17dp"
+                android:text="Report an error of the application"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/_14sdp"
+                android:tint="@color/black"
+                android:layout_marginRight="@dimen/_3sdp"
+                app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_below="@id/ln_report_bug"
+            android:id="@+id/ln_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingLeft="17dp"
+                android:text="Privacy policy"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/_14sdp"
+                android:tint="@color/black"
+                android:layout_marginRight="@dimen/_3sdp"
+                app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

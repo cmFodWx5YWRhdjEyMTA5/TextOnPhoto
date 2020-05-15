@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.home.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgBgMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <FrameLayout
+            android:id="@+id/container_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_ads_cross"
+                android:id="@+id/img_ads_cross"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:paddingLeft="@dimen/_11sdp"
+                android:paddingRight="@dimen/_11sdp"
+                android:paddingBottom="@dimen/_3sdp" />
+            <ImageView
+                app:srcCompat="@drawable/ic_setting"
+                android:id="@+id/img_settings"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:paddingLeft="@dimen/_14sdp"
+                android:paddingRight="@dimen/_14sdp"
+                android:paddingBottom="@dimen/_5sdp" />
+
+            <RelativeLayout
+                android:layout_toRightOf="@id/img_settings"
+                android:gravity="center"
+                android:id="@+id/layout_vip_iap"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/img_ads_cross"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+                <ImageView
+                    android:id="@+id/img_gift_pro"
+                    android:layout_centerVertical="true"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize" />
+                <TextView
+                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/img_gift_pro"
+                    android:text="Upgrade VIP version"
+                    android:textColor="@color/colorRed"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar_ads_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateTint="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="com.dev.signatureonphoto.features.home.FragmentDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginEnd="-65dp"
+        android:layout_marginRight="-65dp"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

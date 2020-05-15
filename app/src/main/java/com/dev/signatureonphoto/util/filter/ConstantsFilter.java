@@ -1,0 +1,43 @@
+package com.dev.signatureonphoto.util.filter;
+
+public class ConstantsFilter {
+    public static boolean REFRESH_LIST = false;
+    public final static String B1 = "B1";
+    public final static String B2 = "B2";
+    public final static String B3 = "B3";
+    public final static String B4 = "B4";
+    public final static String B5 = "B5";
+    public final static String B6 = "B6";
+    public final static String B7 = "B7";
+    public final static String B8 = "B8";
+    public final static String B9 = "B9";
+    public final static String C1 = "C1";
+    public final static String C2 = "C2";
+    public final static String C3 = "C3";
+    public final static String C4 = "C4";
+    public final static String C5 = "C5";
+    public final static String C6 = "C6";
+    public final static String C7 = "C7";
+    public final static String C8 = "C8";
+    public final static String C9 = "C9";
+    public final static String D1 = "D1";
+    public final static String D2 = "D2";
+    public final static String D3 = "D3";
+    public final static String D4 = "D4";
+    public final static String D5 = "D5";
+    public final static String D6 = "D6";
+    public final static String D7 = "D7";
+    public final static String E1 = "E1";
+    public final static String E2 = "E2";
+    public final static String E3 = "E3";
+    public final static String E4 = "E4";
+    public final static String E5 = "E5";
+    public final static String E6 = "E6";
+    public final static String E7 = "E7";
+    public final static String E8 = "E8";
+    public final static String E9 = "E9";
+    public final static String F1 = "F1";
+    public final static String F2 = "F2";
+    public final static String F3 = "F3";
+    public final static String F4 = "F4";
+}

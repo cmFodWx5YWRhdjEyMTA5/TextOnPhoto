@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_headline">24sp</dimen>
+    <dimen name="text_body">16sp</dimen>
+    <dimen name="margin_top">10dp</dimen>
+    <dimen name="padding_star_5dp">5dp</dimen>
+    <dimen name="size_item_option">100dp</dimen>
+    <dimen name="size_icon_share">70dp</dimen>
+    <dimen name="size_what_news">16sp</dimen>
+    <dimen name="item_size">70dp</dimen>
+    <dimen name="item_padding">5dp</dimen>
+    <dimen name="text_big">19sp</dimen>
+    <dimen name="height_option_main">200dp</dimen>
+    <dimen name="radius_bg_filter">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

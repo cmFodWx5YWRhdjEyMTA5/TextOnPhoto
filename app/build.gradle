@@ -1,0 +1,235 @@
+buildscript {
+    repositories {
+    }
+
+    dependencies {
+
+    }
+}
+apply plugin: 'com.android.application'
+apply from: '../config/quality/quality.gradle'
+apply from: '../config/jacoco.gradle'
+apply plugin: 'com.github.ben-manes.versions'
+apply plugin: 'io.fabric'
+
+repositories {
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    dexOptions {
+        maxProcessCount 4
+        preDexLibraries true
+        javaMaxHeapSize "8g"
+    }
+    def code = 1
+    def versionPropsFile = file('version.properties')
+    /*Setting default value for versionBuild which is the last incremented value stored in the file */
+    if (versionPropsFile.canRead()) {
+        Properties versionProps = new Properties()
+        versionProps.load(new FileInputStream(versionPropsFile))
+        code = versionProps['VERSION_CODE'].toInteger()
+
+        versionProps['VERSION_CODE'] = code.toString()
+        versionProps.store(versionPropsFile.newWriter(), null)
+    } else {
+        throw new GradleException("Could not read version.properties!")
+    }
+    /*Wrapping inside a method avoids auto incrementing on every gradle task run. Now it runs only when we build apk*/
+    ext.autoIncrementVersionCodeNumber = {
+        if (versionPropsFile.canRead()) {
+            Properties versionProps = new Properties()
+            versionProps.load(new FileInputStream(versionPropsFile))
+            code = versionProps['VERSION_CODE'].toInteger() + 1
+            versionProps['VERSION_CODE'] = code.toString()
+            versionProps.store(versionPropsFile.newWriter(), null)
+        } else {
+            throw new FileNotFoundException("Could not read version.properties!")
+        }
+    }
+    gradle.taskGraph.whenReady { taskGraph ->
+        if (taskGraph.hasTask("assembleRelease")) { /* when run release task */
+            autoIncrementVersionCodeNumber()
+        }
+    }
+    defaultConfig {
+        defaultPublishConfig 'debug'
+
+        applicationId "com.dev.quotesmaker.imagequotes"
+        minSdkVersion 19
+        targetSdkVersion 28
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        versionCode 23
+        // Major -> Millions, Minor -> Thousands, Bugfix -> Hundreds. E.g 1.3.72 == 1,003,072
+        versionName '1.0.23'
+        vectorDrawables.useSupportLibrary = true
+        ndk {
+            abiFilters "armeabi-v7a", "x86", "x86_64", "arm64-v8a", "mips"
+        }
+    }
+    buildTypes {
+        release {
+//            minifyEnabled false
+//            shrinkResources false
+            useProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    sourceSets {
+        def commonTestDir = 'src/commonTest/java'
+        test {
+            java.srcDir commonTestDir
+        }
+        androidTest {
+            java.srcDir commonTestDir
+        }
+    }
+    lintOptions {
+        textOutput "stdout"
+        textReport true
+        checkAllWarnings true
+        warningsAsErrors true
+        showAll true
+        explainIssues true
+        abortOnError false
+        ignoreWarnings false
+        checkReleaseBuilds false
+        htmlReport true
+        xmlReport true
+        lintConfig file("$projectDir/lint.xml")
+    }
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/license/LICENSE.base64.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/rxjava.properties'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    testOptions {
+        animationsDisabled = true
+        unitTests {
+            includeAndroidResources = true
+            returnDefaultValues = true
+            all {
+                jacoco {
+                    includeNoLocationClasses true
+                }
+                systemProperty 'robolectric.logging.enabled', 'true'
+                systemProperty 'robolectric.logging', 'stdout'
+                // Print test details in the terminal (or CI).
+                testLogging {
+                    events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+                    // Log out test results to console
+                    exceptionFormat 'full'
+                }
+            }
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def appId = variant.applicationId
+            def versionName = variant.versionName
+            def formattedDate = new Date().format('HH-mm-dd-MM-Y')
+            def newNameApk = output.outputFile.name
+
+            Properties versionProps = new Properties()
+            versionProps.load(new FileInputStream(versionPropsFile))
+            int versionCode = versionProps['VERSION_CODE'].toInteger()
+
+            if (variant.buildType.name == "release") {
+                versionCode = versionCode + 1
+                def nameFileApkDebug = appId + "_" + formattedDate + "_" + versionCode + "_" + versionName
+                newNameApk = newNameApk.replace("app-", nameFileApkDebug + "-")
+                outputFileName = newNameApk
+            } else {
+                def nameFileApkDebug = appId + "_" + formattedDate + "_" + versionCode + "_" + versionName
+                newNameApk = newNameApk.replace("app-", nameFileApkDebug + "-")
+                outputFileName = newNameApk
+            }
+        }
+    }
+    productFlavors {
+    }
+    aaptOptions { cruncherEnabled = false }
+
+}
+
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-v4:26.1.0'
+    // the lib is old dependencies version;
+}
+
+apply from: 'dependencies.gradle'
+
+dependencies {
+    implementation supportLibs
+    implementation networkLibs
+    implementation rxJavaLibs
+    implementation otherLibs
+    implementation androidAnalyticLibs
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta3'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+    debugImplementation debugLibs
+    releaseImplementation releaseLibs
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.3.0-alpha02', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.github.GrenderG:Prefs:1.3'
+    implementation 'com.airbnb.android:lottie:2.0.0'
+    implementation 'com.github.yalantis:ucrop:2.2.2-native'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+    implementation 'net.zetetic:android-database-sqlcipher:3.5.7'
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    debugImplementation(sherlock) {
+        transitive = true
+    }
+
+    implementation 'com.github.dmytrodanylyk.shadow-layout:library:1.0.3'
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.3.0'
+    // APT dependencies
+    annotationProcessor annotationProcessorLibs
+    testAnnotationProcessor daggerCompiler
+    androidTestAnnotationProcessor daggerCompiler
+    testImplementation unitTestLibs
+    androidTestImplementation androidTestsLibs
+    //Admob
+    implementation 'com.google.firebase:firebase-ads:18.2.0'
+
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.4@aar') {
+        transitive = true
+    }
+
+    //Banner adaptive
+    implementation 'com.google.android.gms:play-services-ads:18.2.0'
+
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+
+    //Viewpager
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+    //Round imageview
+    implementation 'com.jackandphantom.android:circularimageview:1.2.0'
+    //in app purchase
+    implementation 'com.android.billingclient:billing:1.1'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+}
+apply plugin: 'com.google.gms.google-services'
