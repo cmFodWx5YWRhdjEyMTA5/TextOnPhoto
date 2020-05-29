@@ -31,5 +31,7 @@ public class QuoteApplication extends MultiDexApplication{
                 .core(new CrashlyticsCore.Builder().disabled(BuildConfig.DEBUG).build())
                 .build();
         Fabric.with(this, crashlyticsKit);
+
+        // day la vo ta minh test pull
     }
 }
